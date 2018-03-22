@@ -152,8 +152,8 @@ datacenters = "list of datacenters where Kubernetes node VMs are present"
 
 Below is summary of supported parameters in the `vsphere.conf` file for Kubernetes version 1.9.x
 
-* ```user``` is the vCenter username for vSphere Cloud Provider.
-* ```password``` is the password for vCenter user specified with `user`.
+* ```user``` is the vCenter username for vSphere Cloud Provider. Note that special characters such as `\` need to be escaped with `\`.
+* ```password``` is the password for vCenter user specified with `user`. Note that special characters such as `\` need to be escaped with `\`.
 * ```port``` is the vCenter Server Port. Default is 443 if not specified.
 * ```insecure-flag``` is set to 1 if vCenter used a self-signed certificate.
 * ```server``` is the vCenter Server IP or FQDN
